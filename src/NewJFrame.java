@@ -148,6 +148,8 @@ public class NewJFrame extends javax.swing.JFrame {
          
         try {
             sj.create(sd);
+            Student newst = sj.findStudent(1);
+            jTextField5.setText(""+newst.getId());
             // TODO add your handling code here:
         } catch (Exception ex) {
             Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
